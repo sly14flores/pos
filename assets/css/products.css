@@ -1,0 +1,6 @@
+table.datatable tbody tr td:last-child {
+	text-align: center;
+}
+table.datatable tbody tr td:last-child i {
+	cursor: pointer;
+}

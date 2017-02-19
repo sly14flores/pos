@@ -1,0 +1,47 @@
+<form name="formHolder.product" id="product" class="__loading" novalidate>
+<div class="row">
+<div class="col-md-12">
+<div class="alert alert-danger" role="alert" ng-show="views.alerts.product.show">{{views.alerts.product.message}}</div>
+</div>
+<div class="col-md-12">
+<div class="form-group" ng-class="{'has-error': formHolder.product.product_date.$touched && formHolder.product.product_date.$invalid}">
+	<label>Date</label>
+	<input type="date" class="form-control" placeholder="Date" name="product_date" ng-model="product.product_date" required>
+</div>
+</div>
+<div class="col-md-6">
+	<label>Supplier</label>
+	<input type="text" class="form-control" placeholder="Supplier" name="product_supplier" ng-model="product.product_supplier">
+</div>
+<div class="col-md-6">
+<div class="form-group" ng-class="{'has-error': formHolder.product.product_brand.$touched && formHolder.product.product_brand.$invalid}">
+	<label>Brand</label>
+	<input type="text" class="form-control" placeholder="Brand" name="product_brand" ng-model="product.product_brand" required>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group" ng-class="{'has-error': formHolder.product.product_description.$touched && formHolder.product.product_description.$invalid}">
+	<label>Description</label>
+	<input type="text" class="form-control" placeholder="Description" name="product_description" ng-model="product.product_description" required>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+	<label>WSP</label>
+	<input type="number" class="form-control" placeholder="WSP" name="product_wsp" ng-model="product.product_wsp">	
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+	<label>SRP</label>	
+	<input type="number" class="form-control" placeholder="SRP" name="product_srp" ng-model="product.product_srp">	
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+	<label>Minimum Stocks</label>	
+	<input type="number" class="form-control" placeholder="Minimum Stocks" name="product_minimum_stock" ng-model="product.product_minimum_stock">
+</div>
+</div>
+</div>
+</form>
